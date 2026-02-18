@@ -18,6 +18,12 @@
 **Expected Result:**  
 User account is created successfully and user is redirected to logged-in homepage.
 
+**Actual Result:**  
+User was redirected to homepage successfully and the acount is created.
+
+**Status:**  
+Pass
+
 ---
 
 ### TC-02: Registration with Existing Email
@@ -34,6 +40,13 @@ User account is created successfully and user is redirected to logged-in homepag
 **Expected Result:**  
 System displays error message: "Email already exists".
 
+**Actual Result:**  
+The system is displaying the error message: "Email already exists!".
+
+**Status:**  
+Pass
+
+
 ---
 
 ### TC-03: Registration with Invalid Email Format
@@ -48,6 +61,12 @@ System displays error message: "Email already exists".
 
 **Expected Result:**  
 System displays validation error for invalid email format.
+
+**Actual Result:**  
+The acoount was created with invalid email address format: tiworkads38@gmailcom.
+
+**Status:**  
+Fail
 
 ---
 
@@ -66,6 +85,12 @@ System displays validation error for invalid email format.
 **Expected Result:**  
 User is logged in successfully and redirected to homepage.
 
+**Actual Result:**
+The user is logged in successfully and redirected to homepage.
+
+**Status:**
+Pass
+
 ---
 
 ### TC-05: Login with Incorrect Password
@@ -80,6 +105,12 @@ User is logged in successfully and redirected to homepage.
 **Expected Result:**  
 System displays error message: "Incorrect credentials".
 
+**Actual result:**
+The system is displaying error message: "Your email or password is incorrect!"
+
+**Status:**
+Pass
+
 ---
 
 ### TC-06: Login with Empty Fields
@@ -93,3 +124,9 @@ System displays error message: "Incorrect credentials".
 
 **Expected Result:**  
 Validation message appears for required fields.
+
+**Actual result:**
+The system is displaying a message to fill out empty fields.
+
+**Status:**
+Pass
