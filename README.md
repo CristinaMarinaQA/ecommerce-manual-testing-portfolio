@@ -1,32 +1,59 @@
 # E-commerce Manual Testing Portfolio Project
 
 ## Project Overview
-This repository contains a complete manual testing project for a demo e-commerce web application.
 
-The goal of this project is to demonstrate professional QA documentation and structured test design.
+This repository demonstrates a complete end-to-end manual testing process performed on a demo e-commerce web application.
 
-## Scope
-The following areas are covered:
+The objective of this project is to simulate a real QA workflow, including documentation, execution, defect reporting, and test summary reporting.
+
+Application tested: https://automationexercise.com
+
+---
+
+## Testing Scope
+
+The following modules were covered:
+
 - User Registration
-- Login & Authentication
+- Login / Logout
 - Product Browsing
 - Cart Functionality
 - Checkout Process
-- Form Validation
+- Contact Form
+- Boundary & Negative Testing
 
-## Testing Types Applied
+---
+
+## Testing Techniques Applied
+
 - Functional Testing
 - Negative Testing
 - Boundary Value Analysis
 - Exploratory Testing
-- Usability Testing
+- Risk-based Thinking
 
-## Documentation Included
-- Test Plan
-- Test Scenarios
-- Detailed Test Cases
-- Bug Reports
-- Test Execution Report
+---
+
+## Repository Structure
+
+01_Test_Plan → Test strategy and scope  
+02_Test_Scenarios → High-level testing scenarios  
+03_Test_Cases → Detailed executed test cases  
+04_Bug_Reports → Documented defects  
+05_Test_Reports → Test execution summary  
+
+---
+
+## Execution Summary
+
+- Total Test Cases Executed: 15  
+- Passed: 12  
+- Failed: 3 
+- To Be Executed: 0  
+- Defects Identified: 3  
+
+---
 
 ## Author
-Manual QA Engineer with 4+ years of experience, strengthening test design and documentation skills.
+
+Manual QA Engineer with 4+ years of experience, strengthening test design expertise and expanding knowledge into API testing and automation fundamentals.
