@@ -86,3 +86,47 @@ The quantity cannot be updated. The update button does not trigger any action an
 New
 
 ---
+
+## BUG-03: System allows registration with extremely long input in "Name" field
+
+**Module:** User Registration  
+
+**Severity:** Medium  
+
+**Priority:** Medium  
+
+**Environment:**
+- OS: Windows 11
+- Browser: Google Chrome (latest version)
+- URL: https://automationexercise.com
+
+---
+
+### Preconditions:
+User is on the Registration page.
+
+---
+
+### Steps to Reproduce:
+1. Enter more than 256 characters in the Name field.
+2. Enter a valid unique email address.
+3. Enter a valid password.
+4. Click "Register".
+
+---
+
+### Expected Result:
+System should restrict input length for the Name field or display a validation error message indicating that the maximum character limit has been exceeded.  
+Account should NOT be created with excessively long input data.
+
+---
+
+### Actual Result:
+Account was successfully created with a Name field containing more than 256 characters.
+
+---
+
+### Status:
+New
+
+---
