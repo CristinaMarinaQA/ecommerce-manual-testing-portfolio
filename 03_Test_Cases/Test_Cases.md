@@ -235,3 +235,85 @@ The system is displaying a message to fill out empty fields.
 
 **Status:**
 Pass
+
+---
+
+## Module: Boundary & Negative Testing
+
+### TC-12: Registration with Minimum Password Length
+
+**Precondition:** User is on Registration page  
+
+**Steps:**
+1. Enter valid name  
+2. Enter valid unique email  
+3. Enter password with minimum allowed length  
+4. Click "Register"  
+
+**Expected Result:**  
+System accepts password if it meets minimum length requirement.
+
+**Actual Result:**  
+Password was accepted.
+
+**Status:**  
+Pass
+
+---
+
+### TC-13: Registration with Extremely Long Input Data
+
+**Precondition:** User is on Registration page  
+
+**Steps:**
+1. Enter 256+ characters in Name field  
+2. Enter valid email  
+3. Enter valid password  
+4. Click "Register"  
+
+**Expected Result:**  
+System should either limit input length or display validation message.
+
+**Actual Result:**  
+The account was created with extremy long name, 256+ characters in the name field.
+
+**Status:**  
+Fail
+
+---
+
+### TC-14: Add to Cart Without Being Logged In
+
+**Precondition:** User is not logged in  
+
+**Steps:**
+1. Navigate to Products page  
+2. Click "Add to Cart"  
+
+**Expected Result:**  
+System should allow guest cart functionality.
+
+**Actual Result:**  
+The product is added to the cart.
+
+**Status:**  
+Pass
+
+---
+
+### TC-15: Checkout with Empty Cart
+
+**Precondition:** Cart is empty  
+
+**Steps:**
+1. Navigate to Cart  
+2. Click "Proceed to Checkout"  
+
+**Expected Result:**  
+System should not display the checkout button when the cart is empty.
+
+**Actual Result:**  
+There is no button in the cart to checkout when it's empty.
+
+**Status:**  
+Pass
