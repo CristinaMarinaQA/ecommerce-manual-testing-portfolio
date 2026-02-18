@@ -125,6 +125,111 @@ Pass
 **Expected Result:**  
 Validation message appears for required fields.
 
+**Status:**
+Pass
+
+---
+
+## Module: Cart Functionality
+
+### TC-07: Add Product to Cart
+
+**Precondition:** User is on Product Listing page  
+
+**Steps:**
+1. Navigate to Products page  
+2. Click "Add to Cart" on any product  
+
+**Expected Result:**  
+Product is added to cart successfully and confirmation message is displayed.
+
+**Actual Result:**  
+Product was added successfully and confirmation message appeared.
+
+**Status:**  
+Pass
+
+---
+
+### TC-08: Remove Product from Cart
+
+**Precondition:** Product is already added to cart  
+
+**Steps:**
+1. Navigate to Cart page  
+2. Click "Remove" button for the product  
+
+**Expected Result:**  
+Product is removed from cart and cart is updated.
+
+**Actual Result:**  
+Product was removed successfully and cart updated.
+
+**Status:**  
+Pass
+
+---
+
+### TC-09: Update Product Quantity in Cart
+
+**Precondition:** Product exists in cart  
+
+**Steps:**
+1. Navigate to Cart page  
+2. Change product quantity  
+3. Update cart  
+
+**Expected Result:**  
+Cart updates total price according to new quantity.
+
+**Actual Result:**  
+The update quantity button is not working and the quantity cannot be updated.
+
+**Status:**  
+Fail
+
+---
+
+## Module: Checkout Process
+
+### TC-10: Successful Checkout with Valid Data
+
+**Precondition:** Product exists in cart and user is logged in  
+
+**Steps:**
+1. Navigate to Cart  
+2. Click "Proceed to Checkout"  
+3. Confirm address details  
+4. Place order  
+
+**Expected Result:**  
+Order is successfully placed and confirmation message is displayed.
+
+**Actual Result:**  
+Order was placed successfully and confirmation displayed.
+
+**Status:**  
+Pass
+
+---
+
+### TC-11: Checkout with Empty Mandatory Fields
+
+**Precondition:** User is on checkout page  
+
+**Steps:**
+1. Leave mandatory fields empty  
+2. Click "Place Order"  
+
+**Expected Result:**  
+System should display validation error messages.
+
+**Actual Result:**  
+System displayed validation messages for required fields.
+
+**Status:**  
+Pass
+
 **Actual result:**
 The system is displaying a message to fill out empty fields.
 
